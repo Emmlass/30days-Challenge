@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Registration for Bootcamp</title>
+
+		<!-- external CSS link -->
+
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet"> 
+	</head>
+	<body>
+		<main class="form">
+			<h1>Bootcamp Registration</h1>
+			<p>Complete this form to express your interest in the upcoming web development bootcamp</p>
+			<form action="">
+
+				<fieldset class="first-section">
+					<legend>Contact Details</legend>
+					<label for="name">Name</label>
+					<input type="text" id="name" name="name" autofocus placeholder="John Smith" autocomplete="on" required ><br><br>
+					<label for="email">Email</label>
+					<input type="search" id="email" placeholder="abca@gmail.com" >
+					<label for="tel">Phone</label>
+					<input type="tel" id="tel" placeholder="+234 823456790" ><br><br>
+
+					<input type="hidden" id="indexNumber" name="indexNumber" value="0022569">
+				</fieldset>
+
+				<!-- Personal Information -->
+				<fieldset class="second-section">
+					<legend>Personal Information</legend>
+					<label for="dob">Birth Date</label>
+					<input type="date" id="dob"> <br><br>
+					<label for="gender">Gender ??</label>
+					<input list="genders" name="gender" id="gender">
+					<datalist id="genders">
+					<option value="female">
+					<option value="male">
+					<option value="other">
+					</datalist><br><br>
+					<section class="proficiency">
+						<label for="proficiency"></label>
+						<input type="range" value="4" max="10"  name="proficiency" id="proficiency">
+					</section>
+				</fieldset>
+
+				<!-- Preferred Language -->
+				<section class="terms">
+					<input type="checkbox" id="scales" name="scales" class="checkbox" >
+					<label for="scales"> I have read and agree to the terms and conditions </label>
+				</section>
+				<button>Submit</button>
+		</form>	
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
